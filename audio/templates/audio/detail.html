@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+  <figure>
+    <figcaption>{{recording.title}}</figcaption>
+    <audio controls src={{recording.audio}}>
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+  </figure>
+{% endblock %}
