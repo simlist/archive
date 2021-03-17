@@ -16,6 +16,8 @@ class Series(models.Model):
     def __str__(self):
         return self.name
 
+    class Meta:
+        verbose_name_plural = 'series'
 
 class Recording(models.Model):
     author = models.ForeignKey(Author, on_delete=models.CASCADE)
