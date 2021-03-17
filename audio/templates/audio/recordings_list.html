@@ -1,0 +1,6 @@
+{% extends "audio/base.html" %}
+{% block content %}
+  {% for recording in recordings %}
+    <a href={% url 'recording_detail' recording.slug %}>{{recording.title}}</a>
+  {% endfor %}
+{% endblock %}
