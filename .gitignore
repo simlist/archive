@@ -2,3 +2,5 @@ ENV/
 *.pyc
 .env
 db.*
+**/migrations/
+media/
